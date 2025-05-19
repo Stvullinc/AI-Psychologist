@@ -1,0 +1,18 @@
+{
+    "test": {
+        "password": "1",
+        "token": "7ac18af8-3efe-440b-a601-1b428b93580c"
+    },
+    "test2": {
+        "password": "a",
+        "token": "a425c97f-f293-487c-88e7-aba1c9272816"
+    },
+    "st4kan": {
+        "password": "1234",
+        "token": "fc544724-13f4-438b-ab49-6689cd39ad3c"
+    },
+    "valentin": {
+        "password": "a",
+        "token": "93b4ff38-46d9-4220-8bc5-be81dc5988c9"
+    }
+}
