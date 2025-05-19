@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuthWidget</class>
+ <widget class="QWidget" name="AuthWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #FFFFFF;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="loginPage">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="labelTitle">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20px; color: #333333;</string>
+         </property>
+         <property name="text">
+          <string>Добро пожаловать</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>1</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditLogin">
+         <property name="styleSheet">
+          <string>
+                    QLineEdit {
+                        border: 1px solid #D0D0D0;
+                        border-radius: 8px;
+                        padding: 10px;
+                        font-size: 13px;
+                    }
+                    QLineEdit:focus {
+                        border: 1px solid #007AFF;
+                    }
+                    </string>
+         </property>
+         <property name="placeholderText">
+          <string>Логин</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPassword">
+         <property name="styleSheet">
+          <string>
+                    QLineEdit {
+                        border: 1px solid #D0D0D0;
+                        border-radius: 8px;
+                        padding: 10px;
+                        font-size: 13px;
+                    }
+                    QLineEdit:focus {
+                        border: 1px solid #007AFF;
+                    }
+                    </string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLogin">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QPushButton {
+                        background-color: #007AFF;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 12px;
+                        font-size: 14px;
+                        min-width: 100px;
+                    }
+                    QPushButton:hover {
+                        background-color: #0051A8;
+                    }
+                    QPushButton:pressed {
+                        background-color: #003D7A;
+                    }
+                    </string>
+         </property>
+         <property name="text">
+          <string>Войти</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSwitchToRegister">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QPushButton {
+                        color: #007AFF;
+                        text-decoration: underline;
+                        border: none;
+                        background: transparent;
+                    }
+                    </string>
+         </property>
+         <property name="text">
+          <string>Создать аккаунт</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="registerPage">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="labelTitle_2">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 20px; color: #333333;</string>
+         </property>
+         <property name="text">
+          <string>Регистрация</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Minimum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>5</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditNewLogin">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QLineEdit {
+                        border: 1px solid #D0D0D0;
+                        border-radius: 8px;
+                        padding: 10px;
+                        font-size: 13px;
+                    }
+                    QLineEdit:focus {
+                        border: 1px solid #007AFF;
+                    }
+                    </string>
+         </property>
+         <property name="placeholderText">
+          <string>Придумайте логин</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditNewPassword">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QLineEdit {
+                        border: 1px solid #D0D0D0;
+                        border-radius: 8px;
+                        padding: 10px;
+                        font-size: 13px;
+                    }
+                    QLineEdit:focus {
+                        border: 1px solid #007AFF;
+                    }
+                    </string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Придумайте пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditConfirmPassword">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QLineEdit {
+                        border: 1px solid #D0D0D0;
+                        border-radius: 8px;
+                        padding: 10px;
+                        font-size: 13px;
+                    }
+                    QLineEdit:focus {
+                        border: 1px solid #007AFF;
+                    }
+                    </string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::EchoMode::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Повторите пароль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnRegister">
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QPushButton {
+                        background-color: #007AFF;
+                        color: white;
+                        border-radius: 8px;
+                        padding: 12px;
+                        font-size: 14px;
+                        min-width: 100px;
+                    }
+                    QPushButton:hover {
+                        background-color: #0051A8;
+                    }
+                    QPushButton:pressed {
+                        background-color: #003D7A;
+                    }
+                    </string>
+         </property>
+         <property name="text">
+          <string>Зарегистрироваться</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSwitchToLogin">
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string>
+                    QPushButton {
+                        color: #007AFF;
+                        text-decoration: underline;
+                        border: none;
+                        background: transparent;
+                    }
+                    </string>
+         </property>
+         <property name="text">
+          <string>Уже есть аккаунт</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
